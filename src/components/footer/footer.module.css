@@ -1,0 +1,51 @@
+.container {
+    height: 75px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon {
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  
+  .waIcon{
+          margin-right: 50px;
+          margin-bottom: 10px;
+          bottom: 0;
+          right: 0;
+          position: fixed;
+          z-index: 3000;
+         
+          background-color: #25d365b6;
+          border-radius: 10px;
+          box-shadow:
+              0 0 5px 0px #25d365b6,  /* inner white */
+              0 0 5px 0px #25d365b6, /* middle magenta */
+              0 0 20px 2px #25d365b6; /* outer cyan */
+        
+          animation: updown 2.5s ease infinite;
+  }
+  
+  @keyframes updown {
+    0% {
+      transform: translateY(-20%);
+    }
+  
+    50% {
+      transform: translateY(20%);
+    }
+  
+    100% {
+      transform: translateY(-20%);
+    }
+  }
