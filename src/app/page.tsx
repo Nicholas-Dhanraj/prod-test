@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-// import Rose from "public/rose.png";
+import Rose from "public/rose.png";
 // import Button from "@/components/Button/Button";
 
 export default function Home() {

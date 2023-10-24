@@ -3,9 +3,9 @@
 import Link from "next/link";
 import React from "react";
 import styles from "./navbar.module.css";
-// import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
+import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 // import { signOut, useSession } from "next-auth/react";
-// import Logo from "public/Logo.png";
+import Logo from "public/Logo.png";
 import Image from "next/image";
 
 const links = [
@@ -49,11 +49,11 @@ const Navbar = () => {
       <div>
         
       <Link href="/" className={styles.logo}>
-      {/* <Image src={Logo} alt="" className={styles.img} /> */}
+      <Image src={Logo} alt="" className={styles.img} />
       </Link></div>
         
       <div className={styles.links}>
-        {/* <DarkModeToggle /> */}
+        <DarkModeToggle />
         {links.map((link) => (
           <Link key={link.id} href={link.url} className={styles.link}>
             {link.title}
