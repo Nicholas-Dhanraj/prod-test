@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: rgba(222, 220, 228, 0.692)
   }
   
   .logo {
