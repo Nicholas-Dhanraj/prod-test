@@ -4,12 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 async function getData() {
-  const res = await fetch(`https://okcwm.vercel.app/api/posts`, {
+  const res = await fetch(`https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/posts`, {
     cache: "no-store",
   });
 
   if (!res.ok) {
-    throw new Error("Failed to fetch datas");
+    throw new Error("Failed to fetch data");
   }
 
   return res.json();
