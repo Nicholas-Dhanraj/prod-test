@@ -3,17 +3,17 @@ import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
-// async function getData() {
-//   const res = await fetch(`https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/posts`, {
-//     cache: "no-store",
-//   });
+async function getData() {
+  const res = await fetch(`https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/posts`, {
+    cache: "no-store",
+  });
 
-//   if (!res.ok) {
-//     throw new Error("Failed to fetch data");
-//   }
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
 
-//   return res.json();
-// }
+  return res.json();
+}
 
 const Blog = async () => {
   // const data = await getData();
